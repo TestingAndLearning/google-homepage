@@ -1,0 +1,115 @@
+/* Topbar */
+#top
+{
+	float: right;
+}
+
+#gmail, #images, #grid, #sign
+{
+	display: inline-block;
+}
+
+ul
+{
+	list-style-type: none; 
+}
+
+li
+
+{
+	margin: 0 15px 0 0;
+}
+
+li a
+
+{
+	color: grey;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-family: Arial;
+}
+
+
+#gmail a:hover, #images a:hover
+
+{
+	text-decoration: underline;
+	color: black;
+}
+
+#grid
+{
+	position: relative;
+	top: 5px;
+}
+
+/* Body */
+#body
+{
+	position: relative;
+}
+
+#body img
+{
+	height: 200px;
+	width: 350px;
+
+	position: absolute;
+	/* Change to block to center easier */
+	display: block;
+
+	/* Changed #body to relative to move vertically */
+	top: 150px; bottom: 0; left: 0; right: 0;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#canada
+{
+	position: absolute;
+	color: blue;
+	top: 265px; bottom: 0; left: 550px; right: 0;
+}
+
+#searchArea
+{
+	position: absolute;
+	display: block;
+	top: 315px; bottom: 0; left: 325px; right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#searchBox
+{
+	position: relative;
+	top: 0; bottom: 0; left: -100px; right: 0;
+	width: 475px;
+	height: 30px;
+	border: solid 1px;
+	border-color: #0000ff;
+	padding-left: 10px;
+}
+
+.bottom
+{
+	position: relative;
+	display: block;
+	top: 25px; bottom: 0; left: 10px; right: 0;
+}
+
+.searchButtons
+{
+	border-style: none;
+	height: 35px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.searchButtons:hover
+{
+	border: solid 1px grey;
+	color: black;
+	background-color: #E5E5E5;
+}
