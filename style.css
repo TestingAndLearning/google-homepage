@@ -7,6 +7,7 @@
 #gmail, #images, #grid, #sign
 {
 	display: inline-block;
+	margin-right: 15px;
 }
 
 ul
@@ -17,7 +18,7 @@ ul
 li
 
 {
-	margin: 0 15px 0 0;
+	/* margin: 0 15px 0 0; */
 }
 
 li a
@@ -27,8 +28,8 @@ li a
 	text-decoration: none;
 	letter-spacing: 1px;
 	font-family: Arial;
+	font-size: 12px; 
 }
-
 
 #gmail a:hover, #images a:hover
 
@@ -43,73 +44,104 @@ li a
 	top: 5px;
 }
 
-/* Body */
-#body
+#sign
 {
-	position: relative;
+	background-color: #0080FF; 
+	border: 1px solid #0080FF;
+	border-radius: 2px;
 }
 
-#body img
+#sign li a
 {
-	height: 200px;
-	width: 350px;
+	display: inline-block;
+	color: white;
+	padding: 6px 9px 6px 9px;
+}
 
-	position: absolute;
-	/* Change to block to center easier */
+#sign a:hover
+{
+	cursor: default;
+}
+
+
+/* Body */
+body
+{
+	margin:0;
+}
+	
+#main
+{
+	position: relative;
+	top: 150px;
+	text-align:center;
+}
+
+#logo
+{
+	height: 100px;
+	width: 300px;
+
 	display: block;
-
-	/* Changed #body to relative to move vertically */
-	top: 150px; bottom: 0; left: 0; right: 0;
-	margin-left: auto;
-	margin-right: auto;
-
+    margin-left: auto;
+    margin-right: auto;
+	clear:both;
 }
 
 #canada
 {
-	position: absolute;
-	color: blue;
-	top: 265px; bottom: 0; left: 550px; right: 0;
-}
-
-#searchArea
-{
-	position: absolute;
-	display: block;
-	top: 315px; bottom: 0; left: 325px; right: 0;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#searchBox
-{
 	position: relative;
-	top: 0; bottom: 0; left: -100px; right: 0;
+	color: blue;
+	left: 110px;
+	bottom: 40px;
+}
+
+.search, .search input, #canada
+{
 	width: 475px;
 	height: 30px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.search input
+{
+
 	border: solid 1px;
-	border-color: #0000ff;
+	border-color: grey;
 	padding-left: 10px;
 }
 
-.bottom
+.search
 {
 	position: relative;
-	display: block;
-	top: 25px; bottom: 0; left: 10px; right: 0;
+	top: -20px;
 }
 
-.searchButtons
+input:focus
+{
+	border-color: #0000ff;
+}
+
+button
 {
 	border-style: none;
 	height: 35px;
 	padding-left: 15px;
 	padding-right: 15px;
+	margin-top: 15px;
+	border: solid 1px white;
 }
 
-.searchButtons:hover
+button:hover
 {
 	border: solid 1px grey;
 	color: black;
 	background-color: #E5E5E5;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+button:focus
+{
+	border-color: #0000ff;
 }
