@@ -2,6 +2,7 @@
 
 My first project from theodinproject.com. 
 
-More info about project at: 
+Screenshot of webpage being replicated included in screenshot.png. 
 
+More info about project at: 
 http://www.theodinproject.com/web-development-101/html-css?ref=lnav
