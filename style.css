@@ -1,5 +1,5 @@
 /* Topbar */
-#top
+#nav
 {
 	float: right;
 }
@@ -15,13 +15,12 @@ ul
 	list-style-type: none; 
 }
 
-li
-
+ul, li
 {
-	/* margin: 0 15px 0 0; */
+	display: inline-block;
 }
 
-li a
+#nav li a
 
 {
 	color: grey;
@@ -56,18 +55,13 @@ li a
 	display: inline-block;
 	color: white;
 	padding: 6px 9px 6px 9px;
-	font-weight: bold;
 }
 
 #sign a:hover
 {
-	cursor: default; 
+	cursor: default;
 }
 
-#sign a:active
-{
-	background-color: #0066CC;
-}
 
 /* Body */
 body
@@ -110,7 +104,6 @@ body
 }
 .search input
 {
-
 	border: solid 1px;
 	border-color: grey;
 	padding-left: 10px;
@@ -149,4 +142,67 @@ button:hover
 button:focus
 {
 	border-color: #0000ff;
+}
+
+#french
+{
+	position: relative;
+	top: 50px;
+	letter-spacing: 1px;
+	font-family: Arial;
+	font-size: 12px; 
+}
+
+#french a
+{
+	text-decoration: none;
+}
+
+#french a:hover
+{
+	text-decoration: underline;
+}
+
+/* Footer */
+
+#footer
+{
+	position: fixed;
+	bottom: 0px;
+	background-color:#f2f2f2;
+	width: 100%;
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
+}
+
+.left li a
+{
+	margin-right: 25px;
+}
+
+.right li a
+{
+	margin-right: 25px;
+}
+
+#footer li a
+{
+	color: grey;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-family: Arial;
+	font-size: 12px; 
+}
+
+#footer a:hover
+{
+	text-decoration: underline;
 }
