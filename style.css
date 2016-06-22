@@ -55,6 +55,7 @@ ul, li
 	display: inline-block;
 	color: white;
 	padding: 6px 9px 6px 9px;
+	font-weight: bold;
 }
 
 #sign a:hover
@@ -62,6 +63,10 @@ ul, li
 	cursor: default;
 }
 
+#sign a:active
+{
+	background-color: #0066CC;
+}
 
 /* Body */
 body
